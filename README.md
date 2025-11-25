@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+📱 Personal Budget Tracker — Frontend (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is the mobile frontend of the Personal Budget Tracker App built using React Native, Expo Router, Neon PostgreSQL, Clerk Authentication, and Upstash Redis.
 
-## Get started
+Users can:
 
-1. Install dependencies
+Create an account & log in using Clerk
 
-   ```bash
-   npm install
-   ```
+Add expenses
 
-2. Start the app
+View total balance
 
-   ```bash
-   npx expo start
-   ```
+View recent transactions
 
-In the output, you'll find options to open the app in a
+Track financial activity in real-time
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🚀 Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+React Native + Expo Router
 
-## Get a fresh project
+Clerk authentication
 
-When you're ready, run:
+Secure API calls
 
-```bash
-npm run reset-project
-```
+Add / view transactions
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Neon PostgreSQL as database
 
-## Learn more
+Redis caching
 
-To learn more about developing your project with Expo, look at the following resources:
+Smooth and responsive UI
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🧰 Tech Stack
 
-## Join the community
+React Native + Expo
 
-Join our community of developers creating universal apps.
+Expo Router
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Clerk Auth
+
+Neon PostgreSQL
+
+Upstash Redis
+
+Axios
+
+📦 Installation
+git clone https://github.com/Abhay98-dev/mobile-wallet.git
+cd frontend
+npm install
+
+▶️ Running the App
+npx expo start
+
+
+Scan the QR using Expo Go.
+
+🔗 API Endpoints Used
+| Action              | Method | Endpoint                 |
+| ------------------- | ------ | ------------------------ |
+| Get total balance   | GET    | /api/transactions/total  |
+| Get recent history  | GET    | /api/transactions/recent |
+| Add new transaction | POST   | /api/transactions/add    |
